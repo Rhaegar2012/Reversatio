@@ -41,7 +41,7 @@
                     <a class="nav-link active" aria-current="page" href="/code.html">The Code</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="#">Git Repo</a>
+                    <a class="nav-link" target="_blank" href="https://github.com/Rhaegar2012/Reversatio">Git Repo</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" target="_blank" href="https://josetellezdev.netlify.app/">About</a>
@@ -53,22 +53,46 @@
 <!--Main Section-->
 <main class="flex-shrink-0">
     <div class="container">
-        <h2 class="border-1 border-bottom border-dark">The Code for APP NAME</h2>
+        <h2 class="border-1 border-bottom border-dark">The Code for Reversatio</h2>
         <div class="row row-cols-1 row-cols-lg-2">
             <div class="col-lg-8">
                 <pre class="line-numbers">
                     <code class="language-javascript">
-                        //Call Hello World 
-                        function HelloWorld(){
-                            alert("hello world");
+                        //Call Hello World
+                        function reverseString(){
+                                let string=document.getElementById("textInput").value;
+                                let stringReversed='';
+                        for(let i=string.length-1; i>=0;i--){
+                                stringReversed+=string[i];
+                                }
+                        displayResult(stringReversed);
+
+                        }
+                        function displayResult(text){
+                        document.getElementById("textReversedOutput").innerHTML=text;
                         }
                     </code>
                 </pre>
             </div>
             <div class="col-lg-4">
-                <p> The Code is structed in one function.</p>
-                <h5>Hello World</h5>
-                <p>Hello World is a function that displays an alert with a message of "Hello World"</p>
+                <p> The Code is structured in two functions.</p>
+                <h5>Reverse string</h5>
+                <p>Input: <br>
+                    String to be reversed<br>
+                   Function:<br>
+                   Traverses the string backwards, assigning each  resulting letter to an empty string then calls the 
+                   displayResult function to update the string in the website<br>
+                   Output:<br>
+                   None<br>
+                </p>
+                <h5>Display Result </h5>
+                <p>Input: <br>
+                   Reversed string<br>
+                   Function:<br>
+                   Renders the recersed string to the website <br>
+                   Output:<br>
+                   None<br> 
+                </p>
             </div>
         </div>
     </div>

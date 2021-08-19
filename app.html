@@ -39,7 +39,7 @@
                     <a class="nav-link" href="/code.html">The Code</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="#">Git Repo</a>
+                    <a class="nav-link" target="_blank" href="https://github.com/Rhaegar2012/Reversatio">Git Repo</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" target="_blank" href="https://josetellezdev.netlify.app/">About</a>
@@ -50,7 +50,41 @@
 </nav>
 <!--Main Section-->
 <main class="flex-shrink-0">
-    <div class="container">
+    <div class="container mt-3 me-3">
+        <div class='row py-2'>
+            <div class='col'>
+                <div>
+                    <h2 class="font-weight-bold header-dark header-bold">Reversatio: A Coding Project</h2>
+                </div>
+                <div>
+                    <p>Like magic , watch the words reverse by themselves. 
+                        Enter a string and hit the button</p>
+                </div>
+
+            </div>
+            <div class='col'>
+                <div class="container-fluid">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <div>
+                                    <label for="textInput" class="form-label">Enter Text</label>
+                                </div>
+                                <div>
+                                    <input id="textInput" type="text" class="form-control" placeholder="String">
+                                </div>
+                                <div>
+                                    <button type="button" id="reverseButton" class="btn button-orange mt-2">Reverse Me!</button>
+                                </div>
+                                <div class="jumbotron py-3" id="jumbotronOutput"> 
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
 
     </div>
 
@@ -87,7 +121,9 @@ integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0Ec
 </script>
 <!--Link to javascript scripts-->
 <script src="js/site.js">
-
+</script>
+<script>
+    document.getElementById("reverseButton").addEventListener("click",reverseString);
 </script>
 </body>
 </html>
